@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Heart, Activity, Users, TrendingUp } from 'lucide-react';
+import { Activity, Users, TrendingUp } from 'lucide-react';
 import PatientForm from '../components/PatientForm';
 import RiskDisplay from '../components/RiskDisplay';
 import { PatientData, RiskPrediction } from '../types/medical';
@@ -23,14 +22,9 @@ const Index = () => {
       <header className="bg-white shadow-lg border-b-4 border-blue-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="bg-blue-500 p-3 rounded-full">
-                <Heart className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900">CardioPredict AI</h1>
-                <p className="text-gray-600">Cardiovascular Disease Risk Assessment</p>
-              </div>
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900">CardioPredict AI</h1>
+              <p className="text-gray-600">Cardiovascular Disease Risk Assessment</p>
             </div>
             <div className="hidden md:flex items-center space-x-6 text-sm text-gray-600">
               <div className="flex items-center space-x-2">
@@ -90,7 +84,7 @@ const Index = () => {
           <div className="bg-teal-50 rounded-xl p-6 border border-teal-100">
             <div className="flex items-center space-x-3 mb-4">
               <div className="bg-teal-500 p-2 rounded-lg">
-                <Heart className="h-6 w-6 text-white" />
+                <Users className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-teal-900">Patient-Centered Care</h3>
             </div>
